@@ -4,28 +4,28 @@ const App = () => {
   const categories = [
     {
       id: 1,
-      title: "About us",
+      title: "About",
       imageSrc: `${process.env.PUBLIC_URL}/images/photo.png`,
     },
     {
       id: 2,
       title: "Reviews",
-      imageSrc: `${process.env.PUBLIC_URL}/images/photo.png`,
+      imageSrc: `${process.env.PUBLIC_URL}/images/khaikhai/broccoli.png`,
     },
     {
       id: 3,
       title: "Recipes",
-      imageSrc: `${process.env.PUBLIC_URL}/images/photo.png`,
+      imageSrc: `${process.env.PUBLIC_URL}/images/recipes/broccoli.png`,
     },
     {
       id: 4,
       title: "Lifestyle",
-      imageSrc: `${process.env.PUBLIC_URL}/images/photo.png`,
+      imageSrc: `${process.env.PUBLIC_URL}/images/lifestyle.png`,
     },
     {
       id: 5,
-      title: "Contact us",
-      imageSrc: `${process.env.PUBLIC_URL}/images/photo.png`,
+      title: "Contact",
+      imageSrc: `${process.env.PUBLIC_URL}/images/contact-us.png`,
     },
   ];
 
