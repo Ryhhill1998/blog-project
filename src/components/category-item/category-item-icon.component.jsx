@@ -1,14 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
-import { faStarHalfStroke } from "@fortawesome/free-solid-svg-icons";
+import { faCircleQuestion } from "@fortawesome/free-regular-svg-icons";
+import { faStar } from "@fortawesome/free-regular-svg-icons";
 import { faUtensils } from "@fortawesome/free-solid-svg-icons";
 import { faChartLine } from "@fortawesome/free-solid-svg-icons";
-import { faAddressBook } from "@fortawesome/free-solid-svg-icons";
+import { faAddressBook } from "@fortawesome/free-regular-svg-icons";
 
 const Icon = ({ index }) => {
   const iconsArray = [
     faCircleQuestion,
-    faStarHalfStroke,
+    faStar,
     faUtensils,
     faChartLine,
     faAddressBook,

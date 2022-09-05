@@ -19,6 +19,11 @@
 
     & .category-body-container {
       opacity: 0.9;
+      background-color: #52734d;
+
+      & h2 {
+        color: #f3fadc;
+      }
     }
   }
 
@@ -34,26 +39,23 @@
   }
 
   .category-body-container {
-    height: 5.625em;
-    width: 6.25em;
-    padding: 0 20px;
+    height: 5em;
+    width: 9em;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: white;
+    border-radius: 1em;
     opacity: 0.6;
     position: absolute;
 
     h2 {
       font-weight: bold;
-      margin: 0 6px 6px;
+      margin: 0 6px;
       font-size: 1.4em;
       color: #4a4a4a;
-    }
-
-    p {
-      font-size: 1em;
     }
   }
 }

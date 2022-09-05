@@ -10,8 +10,9 @@ const CategoryItem = ({ category, index }) => {
         style={{ backgroundImage: `url(${imageSrc})` }}
       />
       <div className="category-body-container">
-        <h2>{title}</h2>
-        <Icon index={index} />
+        <h2>
+          {title} <Icon index={index} />
+        </h2>
       </div>
     </div>
   );
