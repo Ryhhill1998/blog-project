@@ -1,36 +1,16 @@
-import Directory from "./components/directory/directory.component";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./routes/navbar/navbar.component";
+import Home from "./routes/home/home.component";
 import "./App.scss";
 
 const App = () => {
-  const categories = [
-    {
-      id: 1,
-      title: "About",
-      imageSrc: `${process.env.PUBLIC_URL}/images/photo.png`,
-    },
-    {
-      id: 2,
-      title: "Reviews",
-      imageSrc: `${process.env.PUBLIC_URL}/images/khaikhai/broccoli.png`,
-    },
-    {
-      id: 3,
-      title: "Recipes",
-      imageSrc: `${process.env.PUBLIC_URL}/images/recipes/broccoli.png`,
-    },
-    {
-      id: 4,
-      title: "Lifestyle",
-      imageSrc: `${process.env.PUBLIC_URL}/images/lifestyle.png`,
-    },
-    {
-      id: 5,
-      title: "Contact",
-      imageSrc: `${process.env.PUBLIC_URL}/images/contact-us.png`,
-    },
-  ];
-
-  return <Directory categories={categories} />;
+  return (
+    <Routes>
+      <Route path="/" element={<Navbar />}>
+        <Route index element={<Home />} />
+      </Route>
+    </Routes>
+  );
 };
 
 export default App;
