@@ -9,13 +9,17 @@ const Home = () => {
     },
     {
       id: 2,
-      title: "Reviews",
-      imageSrc: `${process.env.PUBLIC_URL}/images/khaikhai/broccoli.png`,
+      title: "Snackwallah",
+      date: "Friday, August 12th",
+      location: "Newcastle Upon Tyne",
+      imageSrc: `${process.env.PUBLIC_URL}/images/snackwallah/starter.png`,
     },
     {
       id: 3,
-      title: "Recipes",
-      imageSrc: `${process.env.PUBLIC_URL}/images/recipes/broccoli.png`,
+      title: "Khai Khai",
+      date: "Sunday, August 14th",
+      location: "Newcastle Upon Tyne",
+      imageSrc: `${process.env.PUBLIC_URL}/images/khaikhai/broccoli.png`,
     },
     {
       id: 4,

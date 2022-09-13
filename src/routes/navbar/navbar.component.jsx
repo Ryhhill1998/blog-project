@@ -1,19 +1,12 @@
 import { Outlet, Link } from "react-router-dom";
 import { Fragment } from "react";
 import "./navigation.styles.scss";
+import Icon from "../../components/category-item/category-item-icon.component";
 
 const Navbar = () => {
   return (
     <Fragment>
       <div className="navigation">
-        <div className="nav-links-container-left">
-          <Link className="nav-link" to="/about">
-            About
-          </Link>
-          <Link className="nav-link" to="/reviews">
-            Reviews
-          </Link>
-        </div>
         <Link className="logo-container" to="/">
           <img
             className="logo"
@@ -21,12 +14,18 @@ const Navbar = () => {
             alt="plant based journey logo"
           />
         </Link>
-        <div className="nav-links-container-right">
+        <div className="nav-links-container">
+          <Link className="nav-link" to="/about">
+            About <Icon index={0} />
+          </Link>
+          <Link className="nav-link" to="/reviews">
+            Reviews <Icon index={1} />
+          </Link>
           <Link className="nav-link" to="/recipes">
-            Recipes
+            Recipes <Icon index={2} />
           </Link>
           <Link className="nav-link" to="/contact">
-            Contact
+            Contact <Icon index={4} />
           </Link>
         </div>
       </div>

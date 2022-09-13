@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: center;
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 4px 6px rgba(0, 0, 0, 0.45);
-  margin: 0 0.5em 1em;
   overflow: hidden;
 
   &:hover {
@@ -20,10 +19,11 @@
 
     & .category-body-container {
       opacity: 0.9;
-      background-color: #52734d;
+      background-color: black;
 
-      & h2 {
-        color: #f3fadc;
+      & h2,
+      p {
+        color: white;
       }
     }
   }
@@ -40,9 +40,8 @@
   }
 
   .category-body-container {
-    height: 5.5rem;
-    width: 10rem;
-    padding: 0 1em;
+    min-height: 5.5rem;
+    padding: 1em;
     border: none;
     display: flex;
     flex-direction: column;
@@ -58,5 +57,14 @@
       font-size: 1.2rem;
       color: #4a4a4a;
     }
+
+    p {
+      margin: 0;
+      margin-top: 0.5em;
+    }
+  }
+
+  .hidden {
+    display: none;
   }
 }
